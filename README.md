@@ -132,12 +132,4 @@ out-of-the-box. To load real GPT-2 weights:
    on slices and concatenating outputs) is the natural next step, and is a
    strong "what I'd build next" talking point in an interview.
 
-## What I'd build next (stretch goals)
 
-- Multi-head attention (currently single-head)
-- KV-caching to avoid recomputing attention for already-generated tokens
-  (the single biggest real-world inference speedup)
-- INT8 weight quantization for memory/speed
-- Real GGUF file format parsing (see `weight_loader.hpp` comments for the
-  upgrade path)
-- Top-k / temperature sampling instead of pure greedy decoding
